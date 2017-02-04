@@ -1,0 +1,270 @@
+{
+  "banner": {
+    "img1":"http://i8.mifile.cn/v1/a1/89a33760-240c-e5e2-50ff-b8a864a2aba5.webp",
+    "img2":"http://i8.mifile.cn/v1/a1/f6225781-335e-1d31-a99f-760977c18c65.webp?width=720&heihgt=200"
+  },
+  "menu": {
+    "img1":"http://i8.mifile.cn/v1/a1/6bc707a3-927e-ebcd-3c7a-1e91d6f793aa.webp?width=360&heihgt=513",
+    "img2":"http://i8.mifile.cn/v1/a1/bb2a27db-0433-47dc-b55c-c36b81fa7e41.webp?width=360&heihgt=256",
+    "img3":"http://i8.mifile.cn/v1/a1/1fbd6d1f-05bf-f22e-cba8-250dfade437d.webp?width=360&heihgt=256"
+  },
+  "starGoods": {
+    "img": "http://i8.mifile.cn/v1/a1/6ee55dad-dadc-79d4-1c37-d1694c088d40.webp?width=720&heihgt=440",
+    "starGoodsList": [
+      {
+        "imgSrc": "http://i8.mifile.cn/v1/a1/03d1e94c-b0ed-9a22-70d7-cc6cbd90ec79.webp?width=360&height=360",
+        "title": "红米Note 4 移动定制版",
+        "desc": "全金属十核旗舰手机",
+        "price": 1199
+      },
+      {
+        "imgSrc": "http://i8.mifile.cn/v1/a1/ecb64c5e-9741-1535-dab6-28d47e2b0d10.webp?width=360&height=360",
+        "title": "红米4 32G版",
+        "desc": "长续航金属千元旗舰手机",
+        "price": 899
+      },
+      {
+        "imgSrc": "http://i8.mifile.cn/v1/a1/97c2e91e-523e-3988-3abc-aacc824f2737.webp?width=360&height=360",
+        "title": "小米手环2",
+        "desc": "OLED显示屏，触摸操作",
+        "price": 149
+      },
+      {
+        "imgSrc": "http://i8.mifile.cn/v1/a1/6f19ca85-2326-8e80-0ecc-16134c33a89b.webp?width=360&height=360",
+        "title": "小米净水器（厨下式）",
+        "desc": "健康家庭必备",
+        "price": 1999
+      },
+      {
+        "imgSrc": "http://i8.mifile.cn/v1/a1/22f1a143-59fc-fc88-ced9-4f6edf5f4f6e.webp?width=360&height=360",
+        "title": "米家小白智能摄像头",
+        "desc": "360度 全景带夜视",
+        "price": 399
+      },
+      {
+        "imgSrc": "http://i8.mifile.cn/v1/a1/fd88c85e-d74f-1002-61d0-e001fbb02cf6.webp?width=360&height=360",
+        "title": "米家恒温电水壶",
+        "desc": "一杯水的温度，刚刚好",
+        "price": 199
+      }
+    ]
+  },
+  "newGoods": {
+    "img": "http://i8.mifile.cn/v1/a1/5e7d9b5b-3e6a-3720-7ea2-50f92aad856c.webp?width=720&heihgt=440",
+    "newGoodsList": [
+      {
+        "imgSrc": "http://i8.mifile.cn/v1/a1/38f1fa24-815b-c6a6-925f-65460ce541e4.webp?width=360&height=360",
+        "title": "小米USB充电器",
+        "desc": "精致小巧，便携出行",
+        "price": 49
+      },
+      {
+        "imgSrc": "http://i8.mifile.cn/v1/a1/9f7e141c-87a7-82c6-7170-599504ce2630.webp?width=360&height=360",
+        "title": "小米便携鼠标",
+        "desc": "轻薄便携，含电池仅重77.5g",
+        "price": 99
+      },
+      {
+        "imgSrc": "http://i8.mifile.cn/v1/a1/a4c8c780-acbd-23c7-6ae2-f1abe5e5d34d.webp?width=360&height=360",
+        "title": "WIFI放大器 2",
+        "desc": "速率翻倍 覆盖无忧",
+        "price": 49
+      },
+      {
+        "imgSrc": "http://i8.mifile.cn/v1/a1/21763033-81c2-8cc5-f012-ae1616059ce9.webp?width=360&height=360",
+        "title": "小米移动电源2",
+        "desc": "便携轻便，出行无忧",
+        "price": 149
+      },
+      {
+        "imgSrc": "http://i8.mifile.cn/v1/a1/f935b1a8-92e9-22d6-7c6c-c602b33fd750.webp?width=360&height=360",
+        "title": "防雾霾口罩",
+        "desc": "PM2.5颗粒物，健康防护",
+        "price": 69
+      },
+      {
+        "imgSrc": "http://i8.mifile.cn/v1/a1/1fd7f261-1d68-784e-a1f7-17384d00dc1d.webp?width=360&height=360",
+        "title": "小米米家电动滑板车",
+        "desc": "便携折叠，自由穿行",
+        "price": 1999
+      }
+    ]
+  },
+  "intelligenceGoods": {
+    "img": "http://i8.mifile.cn/v1/a1/41e31ea6-a34e-69d4-aba3-a9ec2cf2f802.webp?width=720&heihgt=440",
+    "intelligenceGoodsList": [
+      {
+        "imgSrc": "http://i8.mifile.cn/v1/a1/97c2e91e-523e-3988-3abc-aacc824f2737.webp?width=360&height=360",
+        "title": "小米手环2",
+        "desc": "OLED显示屏，触摸操作",
+        "price": 149
+      },
+      {
+        "imgSrc": "http://i8.mifile.cn/v1/a1/1ef4e430-b65a-2655-791a-680a49668005.webp?width=360&height=360",
+        "title": "小米移动电源2",
+        "desc": "双向快充，仅14.1mm薄",
+        "price": 79
+      },
+      {
+        "imgSrc": "http://i8.mifile.cn/v1/a1/5f78e5ba-cd16-0c67-3784-c64651596f94.webp?width=360&height=360",
+        "title": "米加扫地机器人",
+        "desc": "智商高，扫的干净扫的快",
+        "price": 1699
+      },
+      {
+        "imgSrc": "http://i8.mifile.cn/v1/a1/24a3df8b-415c-a7df-96b6-a125d9e91746.webp?width=360&height=360",
+        "title": "小米路由器3",
+        "desc": "全向高增益4天线",
+        "price": 149
+      }
+    ]
+  },
+  "newHomeGoods": {
+    "img": "http://i8.mifile.cn/v1/a1/e70cee4f-e1fd-0f0b-8d3b-e695d0b42323.webp",
+    "newHomeGoodsList": [
+      {
+        "imgSrc": "http://i8.mifile.cn/v1/a1/03d1e94c-b0ed-9a22-70d7-cc6cbd90ec79.webp?width=360&height=360",
+        "title": "红米Note 4 移动定制版",
+        "desc": "全金属十核旗舰手机",
+        "price": 1199
+      },
+      {
+        "imgSrc": "http://i8.mifile.cn/v1/a1/ecb64c5e-9741-1535-dab6-28d47e2b0d10.webp?width=360&height=360",
+        "title": "红米4 32G版",
+        "desc": "长续航金属千元旗舰手机",
+        "price": 899
+      },
+      {
+        "imgSrc": "http://i8.mifile.cn/v1/a1/97c2e91e-523e-3988-3abc-aacc824f2737.webp?width=360&height=360",
+        "title": "小米手环2",
+        "desc": "OLED显示屏，触摸操作",
+        "price": 149
+      },
+      {
+        "imgSrc": "http://i8.mifile.cn/v1/a1/6f19ca85-2326-8e80-0ecc-16134c33a89b.webp?width=360&height=360",
+        "title": "小米净水器（厨下式）",
+        "desc": "健康家庭必备",
+        "price": 1999
+      },
+      {
+        "imgSrc": "http://i8.mifile.cn/v1/a1/22f1a143-59fc-fc88-ced9-4f6edf5f4f6e.webp?width=360&height=360",
+        "title": "米家小白智能摄像头",
+        "desc": "360度 全景带夜视",
+        "price": 399
+      },
+      {
+        "imgSrc": "http://i8.mifile.cn/v1/a1/fd88c85e-d74f-1002-61d0-e001fbb02cf6.webp?width=360&height=360",
+        "title": "米家恒温电水壶",
+        "desc": "一杯水的温度，刚刚好",
+        "price": 199
+      },
+      {
+        "imgSrc": "http://i8.mifile.cn/v1/a1/38f1fa24-815b-c6a6-925f-65460ce541e4.webp?width=360&height=360",
+        "title": "小米USB充电器",
+        "desc": "精致小巧，便携出行",
+        "price": 49
+      },
+      {
+        "imgSrc": "http://i8.mifile.cn/v1/a1/9f7e141c-87a7-82c6-7170-599504ce2630.webp?width=360&height=360",
+        "title": "小米便携鼠标",
+        "desc": "轻薄便携，含电池仅重77.5g",
+        "price": 99
+      },
+      {
+        "imgSrc": "http://i8.mifile.cn/v1/a1/a4c8c780-acbd-23c7-6ae2-f1abe5e5d34d.webp?width=360&height=360",
+        "title": "WIFI放大器 2",
+        "desc": "速率翻倍 覆盖无忧",
+        "price": 49
+      },
+      {
+        "imgSrc": "http://i8.mifile.cn/v1/a1/21763033-81c2-8cc5-f012-ae1616059ce9.webp?width=360&height=360",
+        "title": "小米移动电源2",
+        "desc": "便携轻便，出行无忧",
+        "price": 149
+      },
+      {
+        "imgSrc": "http://i8.mifile.cn/v1/a1/f935b1a8-92e9-22d6-7c6c-c602b33fd750.webp?width=360&height=360",
+        "title": "防雾霾口罩",
+        "desc": "PM2.5颗粒物，健康防护",
+        "price": 69
+      },
+      {
+        "imgSrc": "http://i8.mifile.cn/v1/a1/1fd7f261-1d68-784e-a1f7-17384d00dc1d.webp?width=360&height=360",
+        "title": "小米米家电动滑板车",
+        "desc": "便携折叠，自由穿行",
+        "price": 1999
+      }
+    ]
+  },
+  "detail": {
+    "img": "http://i8.mifile.cn/v1/a1/8264fcff-a5db-6d74-cfc2-aa0ea8d6805a.webp",
+    "detailList": [
+      "http://i8.mifile.cn/v1/a1/5700ba33-8b7c-bb14-b6fe-258d6309993d.webp",
+      "http://i8.mifile.cn/v1/a1/a43e9125-59b3-6dd2-6d2b-587d5614e2d4.webp",
+      "http://i8.mifile.cn/v1/a1/123ff16a-2064-5a5f-66ff-c967836afa23.webp",
+      "http://i8.mifile.cn/v1/a1/158832b9-89b4-901e-b30d-59c42190b9ad.webp",
+      "http://i8.mifile.cn/v1/a1/a6bb656f-27c4-695e-483a-44b087d246c8.webp",
+      "http://i8.mifile.cn/v1/a1/a807d8bd-10ea-c4b9-d2c4-5e31685cb04d.webp",
+      "http://i8.mifile.cn/v1/a1/a4946495-1afb-25bd-c1a7-e4c6197d50d9.webp",
+      "http://i8.mifile.cn/v1/a1/cf8400fd-8d7c-1d10-0459-d0186b61a2a4.webp",
+      "http://i8.mifile.cn/v1/a1/7a779a78-9fd9-e87c-5473-2e710e894bdc.webp",
+      "http://i8.mifile.cn/v1/a1/608e27b2-6725-73c7-c4bb-86a75a3336a4.webp",
+      "http://i8.mifile.cn/v1/a1/48504beb-6f3b-3c0c-f38e-fe30e3ff6d37.webp",
+      "http://i8.mifile.cn/v1/a1/c1040e71-7a3c-e4f9-1c7e-d35690798fc7.webp",
+      "http://i8.mifile.cn/v1/a1/4dc17959-3cfb-ca3a-8c2c-0941f12a7912.webp",
+      "http://i8.mifile.cn/v1/a1/63a1f9ba-2e16-3f83-38f0-de07ef2108b5.webp",
+      "http://i8.mifile.cn/v1/a1/51749d01-d7a6-3d9a-937c-fc982966291c.webp",
+      "http://i8.mifile.cn/v1/a1/192a4869-8857-39fd-3a2d-b01f2669e2ce.webp",
+      "http://i8.mifile.cn/v1/a1/2fd53659-9251-9781-6124-7ebe7bc18e4f.webp",
+      "http://i8.mifile.cn/v1/a1/6d6bfd8d-da13-d707-9a72-15710c4b1364.webp",
+      "http://i8.mifile.cn/v1/a1/5b8eb8a7-4a04-fe77-91a1-7664d0207a28.webp",
+      "http://i8.mifile.cn/v1/a1/b35fc2b3-329a-eab1-74b2-8ab955cbd374.webp",
+      "http://i8.mifile.cn/v1/a1/0bac064d-9098-fe37-5ce7-42fceba83160.webp",
+      "http://i8.mifile.cn/v1/a1/e6aa6506-6571-25a4-0b40-cbfe57baf1a6.webp",
+      "http://i8.mifile.cn/v1/a1/9d770dbd-2023-26c6-b672-6a15eec764ef.webp",
+      "http://i8.mifile.cn/v1/a1/aad5f5c5-147e-46eb-22e7-6827c7f65164.webp",
+      "http://i8.mifile.cn/v1/a1/476e16c0-13db-49d6-9570-3fe20f2dc3d9.webp",
+      "http://i8.mifile.cn/v1/a1/e7c40d54-2a6e-f293-3561-dc01be915eab.webp",
+      "http://i8.mifile.cn/v1/a1/760291fd-7657-4711-302a-7021cccca134.webp",
+      "http://i8.mifile.cn/v1/a1/9fa77a3f-f778-eb32-3e4f-d588c927788f.webp",
+      "http://i8.mifile.cn/v1/a1/501d8a62-2d0a-2016-f225-cd6073b555d5.webp"
+    ],
+    "attrList": [
+      "http://i8.mifile.cn/v1/a1/b842a9b2-a9b9-39a2-3b83-ec05d8f2d5b3.webp",
+      "http://i8.mifile.cn/v1/a1/8201d243-8591-26f0-ee06-e73bb118712d.webp",
+      "http://i8.mifile.cn/v1/a1/df69a034-4c4f-fef5-fa2a-32f62458d5e2.webp",
+      "http://i8.mifile.cn/v1/a1/0554258d-85b3-8169-86d7-3d3c9a605cf8.webp",
+      "http://i8.mifile.cn/v1/a1/f394c0ef-aa3d-ce9e-9529-d1a7cbe27202.webp",
+      "http://i8.mifile.cn/v1/a1/1137f0f8-1a7b-c81c-8b80-a60137e3999f.webp",
+      "http://i8.mifile.cn/v1/a1/76788e58-4c4d-f878-7e3a-8732cd658f76.webp",
+      "http://i8.mifile.cn/v1/a1/4d8fb225-17db-7d59-f580-53462f0a69d7.webp",
+      "http://i8.mifile.cn/v1/a1/0da47b1d-cfbe-4369-b6e9-50f1dd610bc5.webp",
+      "http://i8.mifile.cn/v1/a1/f02cfbb5-d362-5c74-b7a5-7729c6cb75d3.webp",
+      "http://i8.mifile.cn/v1/a1/4a796142-f064-51e2-cddb-882aee93b838.webp",
+      "http://i8.mifile.cn/v1/a1/76346306-832d-6d37-71ab-29702fbeff82.webp",
+      "http://i8.mifile.cn/v1/a1/e864c3de-0a8a-0c37-8eaf-b69f789b49c2.webp",
+      "http://i8.mifile.cn/v1/a1/83c5d6da-6988-704f-dcb3-b34b9d2a75e7.webp",
+      "http://i8.mifile.cn/v1/a1/f2472fce-7af0-c7b0-d357-a081edd07de6.webp"
+    ],
+    "goodsAttr": {
+      "title": "红米Note 4 移动定制版 64GB版 金色",
+      "price": 1199,
+      "desc": {
+        "tag": "全网通双卡双待",
+        "sc": "Helio X20 十核旗舰处理器 / 全金属一体化机身 / 4100mAh 大电量"
+      },
+      "attr": {
+        "color": [
+          {"id": 0, "text": "天空灰"},
+          {"id": 1, "text": "玫瑰金"},
+          {"id": 2, "text": "钻石蓝"}
+        ],
+        "ram": [
+          {"id": 0, "text": "16GB"},
+          {"id": 1, "text": "32GB"},
+          {"id": 2, "text": "64GB"}
+        ]
+      }
+    }
+  }
+}
