@@ -1,15 +1,20 @@
 <template>
   <div ref="index" class="app">
+    <mi-load :load="load"></mi-load>
     <mi-header @searchEvent="searchHandle"></mi-header>
     <div v-show="!searchState">
-      <mi-banner :banner="banner"></mi-banner>
-      <mi-menu :menu="menu"></mi-menu>
-      <mi-body :body="body"></mi-body>
+      <div v-if="a"><!--模拟loading效果-->
+        <mi-banner :banner="banner"></mi-banner>
+        <mi-menu :menu="menu"></mi-menu>
+        <mi-body :body="body"></mi-body>
+      </div>
+
     </div>
   </div>
 </template>
 
 <script>
+  import load from '../loading';
   import header from './header';
   import banner from './banner';
   import menu from './menu';
@@ -20,12 +25,17 @@
       'mi-header': header,
       'mi-banner': banner,
       'mi-menu': menu,
-      'mi-body': body
+      'mi-body': body,
+      'mi-load': load
     },
     created () {
-      this.banner = data.banner;
-      this.menu = data.menu;
-      this.body = data;
+      var me = this;
+      setTimeout(function () {
+        me.a = true;
+      }, 2000);
+      me.banner = data.banner;
+      me.menu = data.menu;
+      me.body = data;
     },
     data () {
       return {
@@ -35,7 +45,9 @@
         scrollX: 0,
         scrollY: 0,
         searchState: false,
-        headOpac: ''
+        headOpac: '',
+        load: false,
+        a: false
       };
     },
     methods: {

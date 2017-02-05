@@ -1,23 +1,27 @@
 <template>
-  <div :class="{screen: focus}">
-    <div class="top" :class="{'focus': focus}">
-      <div class="left" v-show="!focus">MI</div>
-      <div class="left" v-show="focus" @click="goBackEvent">返回</div>
-      <div class="center">
-        <input type="text" :class="{border: focus}" @focus="handleFocus" v-model="inputText"/>
+  <div>
+    <div :class="{screen: focus}">
+      <div class="top" :class="{'focus': focus}">
+        <div class="left" v-show="!focus">MI</div>
+        <div class="left" v-show="focus" @click="goBackEvent">返回</div>
+        <div class="center">
+          <input type="text" :class="{border: focus}" @focus="handleFocus" v-model="inputText"/>
+        </div>
+        <div class="right" v-show="!focus">登录</div>
+        <div class="right" v-show="focus">搜索</div>
       </div>
-      <div class="right" v-show="!focus">登录</div>
-      <div class="right" v-show="focus">搜索</div>
+      <div class="main" v-show="focus">
+        <div class="title">热门搜索</div>
+        <img
+          src="http://cdn.cnbj0.fds.api.mi-img.com/b2c-mimall-media/a425e85fa21ed71c2a8d64fe86f833f9.jpg?width=720&heihgt=200">
+        <ul>
+          <li v-for="item in hotWord" @click="inputFillEvent(item)">{{ item }}</li>
+        </ul>
+      </div>
     </div>
-    <div class="main" v-show="focus">
-      <div class="title">热门搜索</div>
-      <img
-        src="http://cdn.cnbj0.fds.api.mi-img.com/b2c-mimall-media/a425e85fa21ed71c2a8d64fe86f833f9.jpg?width=720&heihgt=200">
-      <ul>
-        <li v-for="item in hotWord" @click="inputFillEvent(item)">{{ item }}</li>
-      </ul>
-    </div>
+    <div class="load" ref="loading" id="load"></div>
   </div>
+
 </template>
 
 <script>
@@ -29,7 +33,6 @@
         hotWord: ['红米4 超长续航', '小米Note 2', '小米5s', '笔记本', '小米电视3s', '智能电饭煲']
       };
     },
-    components: {},
     methods: {
       handleFocus () {
         this.focus = true;

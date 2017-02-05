@@ -1,5 +1,5 @@
 <template>
-  <div class="wripper" ref="goods">
+  <div class="wripper">
     <mi-img :img="img"></mi-img>
     <mi-buyControl :goodsAttr="goodsAttr"></mi-buyControl>
     <mi-detail :detailData="detailData"></mi-detail>
