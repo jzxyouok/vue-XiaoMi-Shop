@@ -5,7 +5,7 @@
 
 ## 项目地址
 
-克隆项目用：https://github.com/beautifulBoys/XiaoMi-Shop.git
+克隆项目用：https://github.com/beautifulBoys/vue-XiaoMi-Shop.git
 
 ## 写在前面
 
