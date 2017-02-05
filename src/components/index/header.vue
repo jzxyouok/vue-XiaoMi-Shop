@@ -1,26 +1,20 @@
 <template>
   <div :class="{screen: focus}">
     <div class="top" :class="{'focus': focus}">
-      <div class="background">
-        <div class="left" v-show="!focus">MI</div>
-        <div class="left" v-show="focus" @click="goBackEvent">返回</div>
-        <div class="center">
-          <input type="text" @focus="handleFocus"/>
-        </div>
-        <div class="right" v-show="!focus">登录</div>
-        <div class="right" v-show="focus">搜索</div>
+      <div class="left" v-show="!focus">MI</div>
+      <div class="left" v-show="focus" @click="goBackEvent">返回</div>
+      <div class="center">
+        <input type="text" :class="{border: focus}" @focus="handleFocus" v-model="inputText"/>
       </div>
+      <div class="right" v-show="!focus">登录</div>
+      <div class="right" v-show="focus">搜索</div>
     </div>
     <div class="main" v-show="focus">
       <div class="title">热门搜索</div>
-      <img src="http://cdn.cnbj0.fds.api.mi-img.com/b2c-mimall-media/a425e85fa21ed71c2a8d64fe86f833f9.jpg?width=720&heihgt=200">
+      <img
+        src="http://cdn.cnbj0.fds.api.mi-img.com/b2c-mimall-media/a425e85fa21ed71c2a8d64fe86f833f9.jpg?width=720&heihgt=200">
       <ul>
-        <li>红米4 超长续航</li>
-        <li>小米Note 2</li>
-        <li>小米5s</li>
-        <li>笔记本</li>
-        <li>小米电视3s</li>
-        <li>智能电饭煲</li>
+        <li v-for="item in hotWord" @click="inputFillEvent(item)">{{ item }}</li>
       </ul>
     </div>
   </div>
@@ -30,7 +24,9 @@
   export default {
     data () {
       return {
-        focus: false
+        focus: false,
+        inputText: '',
+        hotWord: ['红米4 超长续航', '小米Note 2', '小米5s', '笔记本', '小米电视3s', '智能电饭煲']
       };
     },
     components: {},
@@ -42,6 +38,9 @@
       goBackEvent () {
         this.focus = false;
         this.$emit('searchEvent', false);
+      },
+      inputFillEvent (word) {
+        this.inputText = word;
       }
     }
   };
@@ -76,10 +75,11 @@
       li {
         list-style-type: none;
         font-size: 12px;
-        border: 1px solid #bbb;
         padding: 8px 10px;
         margin: 5px;
         display: inline-block;
+        background: #F8F2EC;
+        border: 1px solid #FAC288;
       }
     }
   }
@@ -88,7 +88,7 @@
     font-family: "Microsoft YaHei";
     width: 100%;
     height: 40px;
-    /*background: #E58335;*/
+    background: #E54839;
     font-size: 0;
     position: fixed;
     color: #fff;
@@ -118,9 +118,9 @@
         margin: 5px 0 0 0;
         outline: none;
         text-indent: 10px;
-        &:focus {
-          background: #fff;
-          border: 1px solid #ccc;
+        &.border {
+          box-sizing: border-box;
+          border: 1px solid #dedede;
         }
       }
     }
@@ -132,12 +132,6 @@
       text-align: center;
       margin: -1px 0 0 0;
       padding: 0;
-    }
-    .background {
-      /*background: #E58335;*/
-      width: 100%;
-      height: 100%;
-      display: block;
     }
   }
 </style>

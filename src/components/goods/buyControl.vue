@@ -9,10 +9,16 @@
       </div>
       <div class="attr">
         <ul>
-          <li :class="{active: index === 0}" v-for="(item, index) in goodsAttr.attr.color">{{ item.text }}</li>
+          <li :class="{active: index === colorIndex}"
+              v-for="(item, index) in goodsAttr.attr.color"
+              @click="checkColorEvent(index)">{{ item.text }}
+          </li>
         </ul>
         <ul>
-          <li :class="{active: index === 0}" v-for="(item, index) in goodsAttr.attr.ram">{{ item.text }}</li>
+          <li :class="{active: index === ramIndex}"
+              v-for="(item, index) in goodsAttr.attr.ram"
+              @click="checkRamEvent(index)">{{ item.text }}
+          </li>
         </ul>
       </div>
     </div>
@@ -23,9 +29,20 @@
   export default {
     props: ['goodsAttr'],
     data () {
-      return {};
+      return {
+        colorIndex: 1,
+        ramIndex: 0
+      };
     },
-    components: {}
+    components: {},
+    methods: {
+      checkColorEvent (num) {
+        this.colorIndex = num;
+      },
+      checkRamEvent (num) {
+        this.ramIndex = num;
+      }
+    }
   };
 </script>
 
