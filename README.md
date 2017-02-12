@@ -25,7 +25,7 @@
 [小米商城 高仿版](http://www.lixin5.top/mi/)
 
 <p align="center">
-	<img src="https://github.com/beautifulBoys/beautifulBoys.github.io/blob/master/source/images/show_miShop_1.gif" width="350px"/>
+	<img src="https://github.com/beautifulBoys/beautifulBoys.github.io/blob/master/source/XiaoMi-Shop/images/show_miShop_1.gif" width="350px"/>
 </p>
 ## 项目组成
 
