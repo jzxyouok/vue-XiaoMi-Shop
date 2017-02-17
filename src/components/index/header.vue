@@ -2,13 +2,13 @@
   <div>
     <div :class="{screen: focus}">
       <div class="top" :class="{'focus': focus}">
-        <div class="left" v-show="!focus">MI</div>
-        <div class="left" v-show="focus" @click="goBackEvent">返回</div>
+        <div class="left logo" v-show="!focus"></div>
+        <div class="left back" v-show="focus" @click="goBackEvent"></div>
         <div class="center">
           <input type="text" :class="{border: focus}" @focus="handleFocus" v-model="inputText"/>
         </div>
         <div class="right" v-show="!focus">登录</div>
-        <div class="right" v-show="focus">搜索</div>
+        <div class="right search" v-show="focus"></div>
       </div>
       <div class="main" v-show="focus">
         <div class="title">热门搜索</div>
@@ -102,9 +102,25 @@
     .left {
       width: 15%;
       line-height: 40px;
-      font-size: 16px;
+      font-size: 0;
       text-align: center;
       display: inline-block;
+      &.logo {
+        width: 15%;
+        height: 40px;
+        background: url("../../images/svg/mi.svg") no-repeat center center;
+        background-size: 30px;
+      }
+      &.back {
+        width: 15%;
+        height: 40px;
+        background: url("../../images/svg/back.svg") no-repeat center center;
+        background-size: 20px;
+      }
+    }
+    .headIcon {
+      height: 30px;
+      width: 30px;
     }
     .center {
       width: 70%;
@@ -134,7 +150,14 @@
       line-height: 40px;
       text-align: center;
       margin: -1px 0 0 0;
+      vertical-align: top;
       padding: 0;
+      &.search {
+        width: 15%;
+        height: 40px;
+        background: url("../../images/svg/search.svg") no-repeat center center;
+        background-size: 20px;
+      }
     }
   }
 </style>

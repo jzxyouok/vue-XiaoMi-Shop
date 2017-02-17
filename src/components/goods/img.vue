@@ -1,8 +1,8 @@
 <template>
   <div class="img">
     <div class="control">
-      <span class="left" @click="goBackEvent">返</span>
-      <span class="right">搜</span>
+      <div class="left hook" @click="goBackEvent"></div>
+      <div class="right hook" @click="goodSearchEvent"></div>
     </div>
     <img :src="img"/>
   </div>
@@ -17,12 +17,15 @@
     methods: {
       goBackEvent () {
         this.$router.go(-1);
+      },
+      goodSearchEvent () {
+        this.$router.push({path: '/index', query: { sign: 1 }});
       }
     }
   };
 </script>
 
-<style lang="less">
+<style lang="less" scoped>
   .img {
     font-family: "Microsoft YaHei";
     width: 100%;
@@ -39,26 +42,29 @@
     .control {
       width: 100%;
       height: 30px;
-      position: absolute;
+      position: fixed;
       top: 10px;
       left: 0;
       z-index: 10;
       padding: 0 10px;
       box-sizing: border-box;
-      span {
+      div.hook {
         width: 30px;
         height: 30px;
         display: block;
         border-radius: 50%;
-        background: rgba(0, 0, 0, 0.5);
         text-align: center;
         line-height: 30px;
         color: #fff;
         &.left {
           float: left;
+          background: rgba(0, 0, 0, 0.5) url("../../images/svg/back1.svg") no-repeat center center;
+          background-size: 15px;
         }
         &.right {
           float: right;
+          background: rgba(0, 0, 0, 0.5) url("../../images/svg/search1.svg") no-repeat center center;
+          background-size: 15px;
         }
       }
     }

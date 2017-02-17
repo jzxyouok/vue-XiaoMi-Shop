@@ -4,9 +4,9 @@
     <mi-buyControl :goodsAttr="goodsAttr"></mi-buyControl>
     <mi-detail :detailData="detailData"></mi-detail>
     <div class="addCart">
-      <div class="home"@click="toHomeEvent">首页</div>
+      <div class="home"@click="toHomeEvent"></div>
       <div class="add"><span @click="butEvent">立即购买</span></div>
-      <div class="cart"@click="addCartEvent">购物车</div>
+      <div class="cart"@click="addCartEvent"></div>
     </div>
   </div>
 </template>
@@ -30,7 +30,8 @@
       return {
         img: '',
         detailData: [],
-        goodsAttr: {}
+        goodsAttr: {},
+        searchState: false
       };
     },
     methods: {
@@ -42,6 +43,13 @@
       },
       addCartEvent () {
         console.log('添加到购物车成功');
+      },
+      searchHandle (Boolean) {
+        if (Boolean) {
+          this.searchState = true;
+        } else {
+          this.searchState = false;
+        }
       }
     }
   };
@@ -63,15 +71,25 @@
         text-align: center;
         line-height: 50px;
         display: inline-block;
-        height: 100%;
-        font-size: 16px;
-        &.home, &.cart {
+        font-size: 0;
+        overflow: hidden;
+        height: 50px;
+        &.home {
           width: 15%;
           color: #333;
+          background: url("../../images/svg/home.svg") no-repeat center center;
+          background-size: 25px;
+        }
+        &.cart {
+          width: 15%;
+          color: #333;
+          background: url("../../images/svg/cart.svg") no-repeat center center;
+          background-size: 25px;
         }
         &.add {
           width: 70%;
           color: #fff;
+          height: 50px;
           span {
             text-align: center;
             line-height: 40px;
@@ -80,6 +98,7 @@
             height: 40px;
             display: block;
             margin: 5px auto 0 auto;
+            font-size: 16px;
           }
         }
       }
