@@ -1,13 +1,20 @@
 <template>
   <div class="wripper">
     <mi-img :img="img"></mi-img>
-    <mi-buyControl :goodsAttr="goodsAttr"></mi-buyControl>
+    <mi-buyControl :goodsAttr="goodsAttr" ref="control"></mi-buyControl>
     <mi-detail :detailData="detailData"></mi-detail>
     <div class="addCart">
       <div class="home"@click="toHomeEvent"></div>
       <div class="add"><span @click="butEvent">立即购买</span></div>
       <div class="cart"@click="addCartEvent"></div>
     </div>
+    <mi-model ref="alert" type="alert" @confirmEvent="alertBtnEvent">
+      <div slot="alert" class="alert">
+        <h5>您选择的产品</h5>
+        <h6>{{ popInfo.title }}</h6>
+        <p>{{ popInfo.ram }}　　{{ popInfo.color }}</p>
+      </div>
+    </mi-model>
   </div>
 </template>
 <script>
@@ -15,11 +22,13 @@
   import buyControl from './buyControl';
   import detail from './detail';
   import data from '../../../data';
+  import model from '../model';
   export default {
     components: {
       'mi-img': img,
       'mi-buyControl': buyControl,
-      'mi-detail': detail
+      'mi-detail': detail,
+      'mi-model': model
     },
     created () {
       this.img = data.detail.img;
@@ -31,7 +40,8 @@
         img: '',
         detailData: [],
         goodsAttr: {},
-        searchState: false
+        searchState: false,
+        popInfo: {}
       };
     },
     methods: {
@@ -39,7 +49,13 @@
         this.$router.replace({path: '/index'});
       },
       butEvent () {
-        console.log('立即购买');
+        var checkInfo = this.$refs.control.submitBuyInfo();
+        var info = {};
+        info.title = data.detail.goodsAttr.title;
+        info.ram = checkInfo.ram.text;
+        info.color = checkInfo.color.text;
+        this.popInfo = info;
+        this.$refs.alert.modelOpen();
       },
       addCartEvent () {
         console.log('添加到购物车成功');
@@ -50,7 +66,8 @@
         } else {
           this.searchState = false;
         }
-      }
+      },
+      alertBtnEvent () {}
     }
   };
 </script>
@@ -102,6 +119,27 @@
           }
         }
       }
+    }
+  }
+  .alert {
+    h5 {
+      margin: 5px;
+      text-align: center;
+      font-weight: normal;
+      color: #333;
+      font-size: 16px;
+    }
+    h6 {
+      margin: 10px;
+      color: #ff8a27;
+      font-size: 14px;
+      font-weight: normal;
+    }
+    p {
+      line-height: 25px;
+      font-size: 14px;
+      margin: 5px;
+      color: #666;
     }
   }
 </style>

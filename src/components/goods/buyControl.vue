@@ -30,7 +30,7 @@
     props: ['goodsAttr'],
     data () {
       return {
-        colorIndex: 1,
+        colorIndex: 0,
         ramIndex: 0
       };
     },
@@ -41,6 +41,11 @@
       },
       checkRamEvent (num) {
         this.ramIndex = num;
+      },
+      submitBuyInfo () {
+        var ram = this.goodsAttr.attr.ram[this.ramIndex];
+        var color = this.goodsAttr.attr.color[this.colorIndex];
+        return {ram: ram, color: color};
       }
     }
   };

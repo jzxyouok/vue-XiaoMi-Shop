@@ -1,12 +1,17 @@
 {
   "banner": {
-    "img1":"http://i8.mifile.cn/v1/a1/89a33760-240c-e5e2-50ff-b8a864a2aba5.webp",
-    "img2":"http://i8.mifile.cn/v1/a1/f6225781-335e-1d31-a99f-760977c18c65.webp?width=720&heihgt=200"
+    "bannerTop": [
+      "http://i8.mifile.cn/v1/a1/45e7752a-192a-c2b2-3978-a43ccfc49de0.webp",
+      "http://i8.mifile.cn/v1/a1/89a33760-240c-e5e2-50ff-b8a864a2aba5.webp",
+      "http://i8.mifile.cn/v1/a1/2e1d1dc6-536e-933b-df99-428343fdf62c.webp"
+    ],
+    "img1": "http://i8.mifile.cn/v1/a1/89a33760-240c-e5e2-50ff-b8a864a2aba5.webp",
+    "img2": "http://i8.mifile.cn/v1/a1/f6225781-335e-1d31-a99f-760977c18c65.webp?width=720&heihgt=200"
   },
   "menu": {
-    "img1":"http://i8.mifile.cn/v1/a1/6bc707a3-927e-ebcd-3c7a-1e91d6f793aa.webp?width=360&heihgt=513",
-    "img2":"http://i8.mifile.cn/v1/a1/bb2a27db-0433-47dc-b55c-c36b81fa7e41.webp?width=360&heihgt=256",
-    "img3":"http://i8.mifile.cn/v1/a1/1fbd6d1f-05bf-f22e-cba8-250dfade437d.webp?width=360&heihgt=256"
+    "img1": "http://i8.mifile.cn/v1/a1/6bc707a3-927e-ebcd-3c7a-1e91d6f793aa.webp?width=360&heihgt=513",
+    "img2": "http://i8.mifile.cn/v1/a1/bb2a27db-0433-47dc-b55c-c36b81fa7e41.webp?width=360&heihgt=256",
+    "img3": "http://i8.mifile.cn/v1/a1/1fbd6d1f-05bf-f22e-cba8-250dfade437d.webp?width=360&heihgt=256"
   },
   "starGoods": {
     "img": "http://i8.mifile.cn/v1/a1/6ee55dad-dadc-79d4-1c37-d1694c088d40.webp?width=720&heihgt=440",
@@ -255,14 +260,32 @@
       },
       "attr": {
         "color": [
-          {"id": 0, "text": "天空灰"},
-          {"id": 1, "text": "玫瑰金"},
-          {"id": 2, "text": "钻石蓝"}
+          {
+            "id": 0,
+            "text": "天空灰"
+          },
+          {
+            "id": 1,
+            "text": "玫瑰金"
+          },
+          {
+            "id": 2,
+            "text": "钻石蓝"
+          }
         ],
         "ram": [
-          {"id": 0, "text": "16GB"},
-          {"id": 1, "text": "32GB"},
-          {"id": 2, "text": "64GB"}
+          {
+            "id": 0,
+            "text": "16GB"
+          },
+          {
+            "id": 1,
+            "text": "32GB"
+          },
+          {
+            "id": 2,
+            "text": "64GB"
+          }
         ]
       }
     }

@@ -14,6 +14,7 @@
 </template>
 
 <script>
+  import util from '../../../lib/util';
   import load from '../loading';
   import header from './header';
   import banner from './banner';
@@ -36,18 +37,25 @@
       me.banner = data.banner;
       me.menu = data.menu;
       me.body = data;
+      me.bannerList = data.banner.bannerTop;
+    },
+    mounted () {
+      console.log(util.screenSize());
+      this.c_height = 0.711 * util.screenSize().width;
     },
     data () {
       return {
         banner: {},
         menu: {},
         body: {},
+        bannerList: [],
         scrollX: 0,
         scrollY: 0,
         searchState: false,
         headOpac: '',
         load: false,
-        a: false
+        a: false,
+        c_height: 0
       };
     },
     methods: {
@@ -65,5 +73,12 @@
 <style lang="less" scoped>
   .app {
     background: #fff;
+  }
+
+  .banner-img {
+    width: 100%;
+    img {
+      width: 100%;
+    }
   }
 </style>
