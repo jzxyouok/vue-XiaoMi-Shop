@@ -26,6 +26,7 @@
 
 <p align="center">
 	<img src="https://github.com/beautifulBoys/beautifulBoys.github.io/blob/master/source/XiaoMi-Shop/images/GIF1.gif" width="350px"/>
+  
 	<img src="https://github.com/beautifulBoys/beautifulBoys.github.io/blob/master/source/XiaoMi-Shop/images/GIF3.gif" width="350px"/>
 </p>
 ## 项目组成
