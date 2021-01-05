@@ -1,4 +1,4 @@
-# XiaoMi-Shop
+# XiaoMi-Shop (我是抄袭别人的)
 
 > 这是一个高仿小米商城的项目，会通过半年左右的时间逐步完善整个项目。本项目仅用于 Vue.js 实战项目的学习，不作为商业用途。
 
@@ -26,7 +26,7 @@
 
 <p align="center">
 	<img src="https://github.com/beautifulBoys/beautifulBoys.github.io/blob/master/source/XiaoMi-Shop/images/GIF1.gif" width="350px"/>
-  
+
 	<img src="https://github.com/beautifulBoys/beautifulBoys.github.io/blob/master/source/XiaoMi-Shop/images/GIF3.gif" width="350px"/>
 </p>
 ## 项目组成
@@ -70,4 +70,3 @@ npm run build
 
   本项目适合有一定vue基础的同学进阶学习，零基础 No 。
   3月份开始写一个入门项目，如果你有想法，不妨star一下，到时候一起飞。
-
